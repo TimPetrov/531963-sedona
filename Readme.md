@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Tim Petrov](https://up.htmlacademy.ru/htmlcss/22/user/531963).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
