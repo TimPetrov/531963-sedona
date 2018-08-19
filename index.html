@@ -85,9 +85,41 @@
           </ul>
         </section>
 		<section class="search">
-		<h2 class="search-title">Заинтересовались?</h2>
-		<p>Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-		<!-- Здесь будет форма -->
+		  <h2 class="search-title">Заинтересовались?</h2>
+		  <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+		  <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
+		  <div class="modal modal-search">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="search-form-item">
+              <label for="arrival">Дата заезда:</label>
+              <input type="text" name="arrival-date" value="24 Апреля 2017" id="arrival">
+            </div>
+            <div class="search-form-item">
+              <label for="departure">Дата выезда:</label>
+              <input type="text" name="departure-date" value="4 июля 2017" id="departure">
+            </div>
+            <div class="search-form-item">
+              <p>
+                <label for="adult-count">Взрослые:</label>
+                <button class="button button-remove" type="button">-</button>
+                <input type="text" name="adult" value="2" id="adult-count">
+                <button class="button button-add" type="button">+</button>
+              </p>
+            </div>
+            <div class="search-form-item">
+              <p>
+                <label for="children-count">Дети:</label>
+                <button class="button button-remove" type="button">-</button>
+                <input type="text" name="children" value="0" id="children-count">
+                <button class="button button-add" type="button">+</button>
+              </p>
+            </div>
+            <div class="search-form-item">
+              <button class="button button-form-search" type="submit">Найти</button>
+            </div>
+          </form>
+      </div>
 		</section>
 		<img src="img/map.jpg" width="1200" height="475" alt="Городок Седона на карте">
 	</main>
@@ -101,9 +133,9 @@
 			</ul>
 		</div>
 		<div class="footer-copyright">
-            <b>website by</b>
-            <p><a class="footer-logo" href="#">HTML Academy</a></p>
-        </div>
+      <b>website by</b>
+      <p><a class="footer-logo" href="#">HTML Academy</a></p>
+    </div>
 	</footer>
-  </body>
+</body>
 </html>
