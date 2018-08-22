@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
    <header class="main-header">
@@ -21,70 +24,67 @@
 		<main>
 		<h1 class="visually-hidden">Поиск гостиницы</h1>
 		<section class="search-form">
-		<form class="filters" action="https://echo.htmlacademy.ru" method="post">
-        	<div class="filters-options">
-                <fieldset>
-                  <legend>Инфраструктура:</legend>
+		<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset class="filters-options">
+                  <legend class="filters-legend">Инфраструктура:</legend>
                   <ul class="filters-list">
                     <li class="filters-item">
-                      <input type="checkbox" name="pool" id="pool" checked>
+                      <input class="filter-checkbox" type="checkbox" name="pool" id="pool" checked>
                       <label for="pool">Бассейн</label>
                     </li>
                     <li class="filters-item">
-                      <input type="checkbox" name="parking" id="parking">
+                      <input class="filter-checkbox" type="checkbox" name="parking" id="parking">
                       <label for="parking">Парковка</label>
                     </li>
                     <li class="filters-item">
-                      <input type="checkbox" name="wi-fi" id="wi-fi">
+                      <input class="filter-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
                       <label for="wi-fi">WI-FI</label>
                     </li>
                   </ul>
                 </fieldset>
-            </div>
-            <div class="filters-options">
-                <fieldset>
-                  <legend>Тип жилья:</legend>
+                <fieldset class="filters-options">
+                  <legend class="filters-legend">Тип жилья:</legend>
                   <ul class="filters-list">
                     <li class="filters-item">
-                      <input type="checkbox" name="hotel" id="hotel" checked>
+                      <input class="filter-checkbox" type="checkbox" name="hotel" id="hotel" checked>
                       <label for="hotel">Гостиница</label>
                     </li>
                     <li class="filters-item">
-                      <input type="checkbox" name="motel" id="motel" checked>
+                      <input class="filter-checkbox" type="checkbox" name="motel" id="motel" checked>
                       <label for="motel">Мотель</label>
                     </li>
                     <li class="filters-item">
-                      <input type="checkbox" name="apartments" id="apartments" checked>
+                      <input class="filter-checkbox" type="checkbox" name="apartments" id="apartments" checked>
                       <label for="apartments">Апартаменты</label>
                     </li>
                   </ul>
                 </fieldset>
-            </div>
-            <div class="filters-price">
-                <fieldset>
-                  <legend>Стоимость в сутки (p):</legend>
-                  <div class="filters-price-inputs">
-                    <label>
-                      От <input type="text" name="min-price-input" value="0">
-                    </label>
-                    <label>
-                      До <input type="text" name="max-price-input" value="3000">
-                    </label>
-                  </div>
-                  <div class="filters-range">
-                    <div class="filters-price-scale"></div>
-                    <div class="filters-price-min" tabindex="0">Минимум</div>
-                    <div class="filters-price-max" tabindex="0">Максимум</div>
-                  </div>
-                </fieldset>
-                <div class="filters-apply">
-                  <button class="filter-btn" type="submit" name="search-show">Показать</button>
+                <fieldset class="filters-price">
+          				<div class="filter-wrapper">
+              <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price" for="min-price-id">От
+                    <input name="min-price" type="text" value="0" id="min-price-id">
+                  </label>
+                  <label class="max-price" for="max-price-id">До
+                    <input name="max-price" type="text" value="3000" id="max-price-id">
+                  </label>
                 </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </div>
+              <button type="submit" class="button button-filter">Показать</button>
             </div>
+                </fieldset>
           </form>
 		</section>
 		<section class="catalog-sort">
-          <nav class="catalog-sort-nav">
             <h3 class="catalog-sort-count">Найдено: 3</h3>
             <p class="catalog-sort-title">Сортировка:</p>
             <ul class="catalog-sort-list">
@@ -92,7 +92,6 @@
               <li><a class="catalog-sort-type" href="#">По типу</a></li>
               <li><a class="catalog-sort-type" href="#">По рейтингу</a></li>
             </ul>
-          </nav>
           <ul class="catalog-list">
             <li class="catalog-item">
               <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
@@ -102,9 +101,15 @@
                   <span class="catalog-item-type">гостиница</span>
                   <span class="catalog-item-price">от 4000 р.</span>
                 </p>
-                <span class="button-info"><a href="info.html">подробнее</a></span>
+                <span class="button-info"><a href=#>подробнее</a></span>
                 <span class="button-booking"><a href="#">забронировать</a></span>
               </div>
+              <ul class="hotel-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+              </ul>
               <div class="catalog-item-rating">
                 <span class="rate">Рейтинг: 8,5</span>
               </div>
@@ -117,9 +122,14 @@
                   <span class="catalog-item-type">мотель</span>
                   <span class="catalog-item-price">от 3000 р.</span>
                 </p>
-                <span class="button-info"><a href="info.html">подробнее</a></span>
+                <span class="button-info"><a href=#>подробнее</a></span>
                 <span class="button-booking"><a href="#">забронировать</a></span>
               </div>
+              <ul class="hotel-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+              </ul>
               <div class="catalog-item-rating">
                 <span class="rate">Рейтинг: 8,9</span>
               </div>
@@ -132,9 +142,13 @@
                   <span class="catalog-item-type">апартаменты</span>
                   <span class="catalog-item-price">от 2000 р.</span>
                 </p>
-                <span class="button-info"><a href="info.html">подробнее</a></span>
+                <span class="button-info"><a href=#>подробнее</a></span>
                 <span class="button-booking"><a href="#">забронировать</a></span>
               </div>
+              <ul class="hotel-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+              </ul>
               <div class="catalog-item-rating">
                 <span class="rate">Рейтинг: 9,2</span>
               </div>

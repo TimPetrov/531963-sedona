@@ -1,0 +1,423 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-navigation-list {
+  list-style: none;
+}
+
+.site-navigation-item a {
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.site-navigation-item a:hover,
+.site-navigation-item a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation-item a:active {
+  opacity: 0.3;
+}
+
+.city-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.reason-list {
+  list-style: none;
+}
+
+.reason-item-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.reason-item-description {
+  text-align: center;
+  color: #fff;
+  background-color: #81b3d2;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-item-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #000;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.reason-short-list {
+  list-style: none;
+}
+
+.reason-item {
+  background-color: #eeeeee;
+}
+
+.reason-item-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.reason-item .reason-item-title {
+  color: #000;
+}
+
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.search-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*Footer*/
+
+.footer-main-info {
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.footer-developer b {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #000;
+}
+
+/*Модальное окно*/
+
+.modal {
+  color: #000000;
+  background-color: #fff;
+}
+
+.search-form-item label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.search-form-item input[type="text"] {
+  font: inherit;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-form-item input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form-item input:focus {
+  background-color: #fff;
+  outline: 2px solid #e5e5e5;
+}
+
+.button-remove,
+.button-add {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+}
+
+.button-remove:hover,
+.button-add:hover,
+.button-remove:focus,
+.button-add:focus {
+  color: #000;
+}
+
+.button-remove:active,
+.button-add:active {
+  color: #81b3d2;
+}
+
+.button-form-search {
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #81b3d2;
+}
+
+.button-form-search:hover,
+.button-form-search:focus {
+  background-color: #669ec0;
+  outline: none;
+}
+
+.button-form-search:active {
+  background-color: #5496bd;
+}
+
+
+/*КАТАЛОГ*/
+
+.filters-form {
+  background-image: url("../img/filter-background.png");
+  background-repeat: no-repeat;
+}
+
+.filters-legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.filters-list {
+  list-style: none;
+}
+
+.filters-item {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.filter-checkbox + label {
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.button {
+  font: inherit;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #766357;
+  border-style: none;
+}
+
+/*doble range*/
+.filter-range {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.price-controls {
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls label {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+.button-filter {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: transparent;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+/*end of double range*/
+
+.catalog-sort {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000;
+}
+
+.catalog-sort-count {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+.catalog-sort-title {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+.catalog-sort-list {
+  list-style: none;
+}
+
+.catalog-sort-type {
+  color: #000;
+  opacity: 0.3;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.catalog-sort-type.active {
+  color: #81b3d2;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.catalog-sort-type:hover,
+.catalog-sort-type:focus {
+  color: #81b3d2;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  opacity: 1;
+}
+
+.catalog-sort-type:active {
+  color: #000;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+.catalog-item-title:hover,
+.catalog-item-title:focus {
+  color: #81b3d2;
+}
+
+.catalog-item-title:active {
+  color: #000;
+  opacity: 0.3;
+}
+
+.catalog-item p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-info a,
+.button-booking a {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.button-info {
+  background-color: #81b3d2;
+}
+
+.button-info:hover,
+.button-info:focus {
+  background-color: #669ec0;
+}
+
+.button-info:active {
+  background-color: #5496bd;
+}
+
+.button-info a:active {
+  opacity: 0.3;
+}
+
+.button-booking {
+  background-color: #766357;
+}
+
+.button-booking:hover,
+.button-booking:focus {
+  background-color: #604e43;
+}
+
+.button-booking:active {
+  background-color: #503e33;
+}
+
+.button-booking a:active {
+  opacity: 0.3;
+}
+
+.rate {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+  background-color: #f2f2f2;
+}
