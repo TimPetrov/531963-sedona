@@ -839,6 +839,31 @@ img {
   background-repeat: no-repeat;
 }
 
+.filter-checkbox:disabled + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox:checked:disabled + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
+}
+
+
 
 .filters-list {
   list-style: none;
