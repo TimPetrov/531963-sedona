@@ -20,13 +20,17 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -602,16 +606,16 @@ img {
 
 @keyframes slide {
   0% {
-    transform: translateY(-30px);
+    transform: translateY(-80px);
   }
   15% {
-    transform: translateY(-25px);
+    transform: translateY(-60px);
   }
   30% {
-    transform: translateY(-20px);
+    transform: translateY(-40px);
   }
   45% {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
   }
   75% {
     transform: translateY(-10px);
@@ -620,6 +624,8 @@ img {
     transform: translateY(0px);
   }
 }
+
+
 
 .modal-search {
   display: block;
@@ -631,7 +637,7 @@ img {
   padding: 55px 55px;
   z-index: 10;
   animation-name: slide;
-  animation-duration: 0.6s;
+  animation-duration: 1.3s;
 }
 
 .modal-hide {
@@ -944,9 +950,6 @@ img {
   color: #000000;
 }
 
-.filter-checkbox {
-  display: none;
-}
 
 .filter-checkbox + label {
   display: block;
@@ -1125,7 +1128,8 @@ img {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+   border: 10px solid #ffffff; 
+   top: -10px;
 }
 
 .range-toggle-min {
@@ -1150,7 +1154,8 @@ img {
   cursor: pointer;
 }
 
-.btn-transparent:hover {
+.btn-transparent:hover,
+.btn-transparent:focus {
   color: #000000;
   background: #ffffff;
 }
