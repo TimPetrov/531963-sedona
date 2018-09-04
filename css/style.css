@@ -608,18 +608,6 @@ input[type="radio"].visually-hidden {
   0% {
     transform: translateY(-80px);
   }
-  15% {
-    transform: translateY(-60px);
-  }
-  30% {
-    transform: translateY(-40px);
-  }
-  45% {
-    transform: translateY(-20px);
-  }
-  75% {
-    transform: translateY(-10px);
-  }
   100% {
     transform: translateY(0px);
   }
@@ -962,6 +950,10 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.filter-checkbox:focus + label::before {
+  outline: #5d9ddd solid 2px ;
+}
+
 .filter-checkbox + label::before {
   content: "";
   display: block;
@@ -1251,7 +1243,7 @@ input[type="radio"].visually-hidden {
 .arrow-up.active,
 .arrow-down.active {
   fill: #81b3d2;
-opacity: 1;
+  opacity: 1;
 }
 
 .arrow-up,

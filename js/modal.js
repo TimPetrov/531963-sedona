@@ -4,6 +4,6 @@
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.remove("modal-hide");
+    popup.classList.toggle("modal-hide");
 
 });
