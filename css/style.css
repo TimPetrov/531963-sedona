@@ -77,12 +77,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -98,11 +92,9 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: 1060px;
   padding: 0 70px;
   margin: 0;
-  margin-right: auto;
   list-style: none;
 }
 
@@ -112,31 +104,29 @@ input[type="radio"].visually-hidden {
           flex-grow: 0;
   margin: 0;
   padding: 16px 0;
+  min-width: 210px;
 }
 
 .site-navigation-list li:first-child,
-.site-navigation-list li:nth-child(2) {
+.site-navigation-list li:nth-child(2){
   text-align: left;
-}
-
-.site-navigation-list li:nth-child(2) {
-  margin-right: auto;
-}
-
-.site-navigation-list li:nth-child(3),
-.site-navigation-list li:last-child {
-  text-align: right;
+  margin-right: 32px;
 }
 
 .site-navigation-list li:nth-child(3) {
-  margin-left: auto;
+  margin-left: 120px;
+  text-align: right;
+}
+
+.site-navigation-list li:last-child {
+  margin-left: 35px;
+  text-align: right;
 }
 
 .site-navigation-item a {
   display: block;
   margin: 0;
   padding: 0;
-  text-align: center;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
