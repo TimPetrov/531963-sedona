@@ -271,7 +271,7 @@ input[type="radio"].visually-hidden {
   height: 70px;
   top: -88px;
   left: 195px;
-  margin-left: -37px;
+  margin-left: -33px;
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -334,7 +334,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-align: center;
   max-width: 160px;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   margin-top: 49px;
   margin-right: auto;
   margin-left: auto;
@@ -346,7 +346,7 @@ input[type="radio"].visually-hidden {
 
 .reason-text {
   margin: auto;
-  margin-top: 21px;
+  margin-top: 14px;
 }
 
 .search {
