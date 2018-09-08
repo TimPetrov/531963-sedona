@@ -30,7 +30,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -595,12 +596,26 @@ input[type="radio"].visually-hidden {
 }
 
 
-@keyframes slide {
+@-webkit-keyframes slide {
   0% {
-    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
   }
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -615,8 +630,10 @@ input[type="radio"].visually-hidden {
   margin-left: -252px;
   padding: 55px 55px;
   z-index: 10;
-  animation-name: slide;
-  animation-duration: 1.3s;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
 }
 
 .modal-hide {
@@ -897,12 +914,14 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-form fieldset:first-child {
-  flex-basis: 210px;
+  -ms-flex-preferred-size: 210px;
+      flex-basis: 210px;
   margin-right: 30px;
 }
 
 .filters-form fieldset:nth-child(2) {
-  flex-basis: 210px;
+  -ms-flex-preferred-size: 210px;
+      flex-basis: 210px;
   padding-left:15px;
   margin-right: 274px;
 }
@@ -1171,10 +1190,17 @@ input[type="radio"].visually-hidden {
 .catalog-sort-wrapper {
   min-width: 1060px;
   padding: 0 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 87px;
 }
 
@@ -1267,7 +1293,8 @@ input[type="radio"].visually-hidden {
 
 
 .catalog-sort-count {
-  flex-basis: 140px;
+  -ms-flex-preferred-size: 140px;
+      flex-basis: 140px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -1275,7 +1302,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-sort-title {
-  flex-basis: 80px;
+  -ms-flex-preferred-size: 80px;
+      flex-basis: 80px;
   margin-right: auto;
   margin-left: 26px;
   font-size: 12px;
