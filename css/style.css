@@ -385,7 +385,7 @@ input[type="radio"].visually-hidden {
   font: inherit;
   color: #fff;
   text-transform: uppercase;
-  background-color: #766357;
+  background-color: #f2f2f2;
   border-style: none;
 }
 
@@ -401,6 +401,7 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  background-color: #766357; 
 }
 
 .button-search:hover,
@@ -710,7 +711,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-
   margin: 0;
   margin-top: 2px;
   margin-left: auto;
@@ -817,30 +817,67 @@ input[type="radio"].visually-hidden {
   outline: 2px solid #e5e5e5;
 }
 
-.button-remove,
-.button-add {
-  width: 37px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 6px 10px;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #a9a9a9;
+.button-container {
+  display: flex;
+  position: relative;
+  width: 114px;
+}
+
+.button-add,
+.button-remove {
+    position: relative;
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 38px;
+  height: 38px;
   background-color: #f2f2f2;
+  border: 0;
 }
 
-.button-remove:hover,
-.button-add:hover,
-.button-remove:focus,
-.button-add:focus {
-  color: #000;
+.button-add::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  width: 11px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #a9a9a9;
 }
 
-.button-remove:active,
-.button-add:active {
-  color: #81b3d2;
+.button-add::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  width: 3px;
+  height: 11px;
+  border-radius: 1px;
+  background-color: #a9a9a9;
+}
+
+.button-remove::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  width: 12px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #a9a9a9;
+}
+
+.button-remove:hover::before,
+.button-add:hover::after,
+.button-add:hover::before {
+  background-color: #000000;
+}
+
+.button-remove:active::before,
+.button-add:active::after,
+.button-add:active::before {
+  background-color: #81b3d2;
 }
 
 .button-form-search {
@@ -1077,6 +1114,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -1537,6 +1575,7 @@ input[type="radio"].visually-hidden {
 
 .rate {
   display: inline-block;
+  vertical-align: middle;
   padding: 5px 15px;
   font-size: 14px;
   line-height: 21px;

@@ -5,7 +5,7 @@
     <title>Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -80,7 +80,6 @@
                   <p class="reason-text reason-short">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li class="reason-item">
-              <!-- Вот сдесь проблема -->
                   <h3 class="reason-item-title">Мало туристов</h3>
                   <p class="reason-number reason-short">— №5 —</p>
                   <p class="reason-text reason-short">Большинство едет в гранд каньон и толпится там</p>
@@ -121,18 +120,18 @@
             <div class="search-form-item">
               <div class="item-wrapper">
                 <label for="adult-count">Взрослые:</label>
-                <p>
-                  <button class="button button-remove" type="button">-</button>
+                <p class="button-container">
+                  <button class="button button-remove" type="button"><span class="visually-hidden">Уменьшить</span></button>
                   <input type="text" name="adult" value="2" id="adult-count">
-                  <button class="button button-add" type="button">+</button>
+                  <button class="button button-add" type="button"><span class="visually-hidden">Увеличить</span></button>
               </p>
             </div>
               <div class="item-wrapper">
                <label for="children-count">Дети:</label>
-                <p>
-                  <button class="button button-remove" type="button">-</button>
+                <p class="button-container">
+                  <button class="button button-remove" type="button"><span class="visually-hidden">Уменьшить</span></button>
                   <input type="text" name="children" value="0" id="children-count">
-                  <button class="button button-add" type="button">+</button>
+                  <button class="button button-add" type="button"><span class="visually-hidden">Увеличить</span></button>
                 </p>
               </div>
               </div>
